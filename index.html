@@ -3,85 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>test javaScript</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-	#main{
-		width:500px;
-		height: 500px;
-		background-color:#ddd;
-		margin:50px auto;
-		padding:100px;
-	}
-	#main #head{
-		width:240px;
-		height: 240px;
-		border:5px dashed navy;
-		border-radius:50%;
-		background: yellow;
-		margin:0 auto;
-		display: block;
-		overflow: hidden;
-	}
-	#main #head img#fan{
-	    max-width: 100%;
-	    transition: all 1s linear 0s;
-	    transform-origin: center;
-	}
-	#main #head img#fan.fan-on{
-	   	animation: round .6s linear 0s infinite;
-	}
-	#main #bar{
-		width:40px;
-		height:200px;
-		margin:0 auto;
-		border:5px solid navy;
-		border-radius:47%;
-		background: yellow;
-	}
-	#main #bar h2{
-		text-align: center;
-		margin-top: 50px;
-		color:blue;
-		font-weight: 900;
-		font-family: cursive;
-	}
-	#main #panel{
-		width:150px;
-		height:100px;
-		margin:0 auto;
-		border:5px solid navy;
-		border-radius: 25px;
-		background: yellow;
-	}
-	#main #panel button{
-		padding:15px;
-		margin:15% auto;
-		border:2px solid navy;
-		margin-left: 10px;
-		border-radius:20%;
-		outline:0;
-		background: red;
-        color: #fff;
-        box-shadow: 0px 5px 2px #111;
-	}
-	#main #panel button:focus-within{
-	    background: green;
-	    color: #fff;
-	    box-shadow: none;
-	}
-
-
-/*========== ANIMATION PART ==============*/
-
-@keyframes round{
-	to{
-		transform:rotate(0deg);
-	}
-	from{
-		transform:rotate(-360deg);
-	}
-}
-</style>
 <body>
 	<div id="main">
 		<div id="head">
@@ -98,16 +21,6 @@
 		</div>
 	</div>
 
-	<script>
-		var fan = document.getElementById('fan');
-		function btn_on(){
-			fan.classList.add("fan-on");
-			console.log("fan on");
-		}
-		function btn_off(){
-			fan.classList.remove("fan-on");
-			console.log("fan off");
-		}
-	</script>
+	<script src="./js/app.js"></script>
 </body>
 </html>
